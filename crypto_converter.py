@@ -57,9 +57,6 @@ def get_price(*args):
     elif args[0][1].lower() == 'kucoin':
         return '\n'.join(result_k)
 
-    print('\n'.join(result_b))
-    print()
-
     n_res = []
     for i in range(0, min(len(result_k), len(result_b)), 1):
         if result_k[i][:4] == 'Пара' and result_b[i][:4] == "Пара":
